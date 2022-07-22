@@ -1,0 +1,42 @@
+nclude <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+ int confidence, english,local,personality,theory,writing,speaking,java,python,php,dot_net,decision;
+ printf("****************************** \n");
+ printf("  ***********************\n");
+ printf("  Welcome to DSCET \n");
+ printf("  Designation-Instructor \n");
+ printf("  Place:ECR ROAD CHENNAI, 603104 \n");
+ printf("  Mob: 044-27442844/044-27443844 \n");
+ printf("  www.dscet.ac.in \n");
+ printf("  *************************\n");
+ printf("********************************** \n \n \n \n");
+        printf("Confidence Level ? (1 = Good, 0 = bad):");
+        scanf("%d" ,&confidence);
+        printf("English spoken ? (1 = Good, 0 = bad):");
+        scanf("%d" ,&english);
+        printf("Local Language ? (1 = Good, 0 = bad):");
+        scanf("%d" ,&local);
+        printf("writing skils ? (1 = Good, 0 = bad):");
+        scanf("%d" ,&writing);
+        printf("speaking english ? (1 = Good, 0 = bad):");
+        scanf("%d" ,&speaking);
+        printf("Doed he/she know java ? (1 = Yes,0 = No):");
+        scanf("%d", &java);
+        printf("Does he/she know python ? (1 = Yes,0 = No):");
+        scanf("%d" ,&python);
+        printf("Does he/she know php ? (1 = Yes,0 = No):");
+        scanf("%d" ,&php);
+        printf("Does he/she know dot_net ? (1 = Yes,0 = No):");
+        scanf("%d" ,&dot_net);
+        printf("Theory knowledge ? (1 = Good, 0 = bad):");
+        scanf("%d" ,&theory);
+        printf("personality ?(1 = Good, 0 = bad):");
+        scanf("%d",&personality);
+        printf("\n \n \n NOTE: 1 = selected , 0 = Not selected");
+        decision = ( confidence &&(english||local)&&(writing||speaking)&&(java||python)&&(php||dot_net)&&personality);
+        printf("\n \n This candidate got %d \n \n \n" ,decision);
+
+}
